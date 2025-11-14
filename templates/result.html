@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/result.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <h1
+      class="h1 animate__animated animate__zoomInUp animate_delay-3s animate__repeat-1"
+    >
+      Final Result
+      <img src="../static/award.gif" alt="" class="awardimg" />
+    </h1>
+    <div class="content" id="content1">
+      <p class="review"><strong>Review:</strong> {{ message }}</p>
+      <p>
+        <strong>Prediction:</strong>
+        <span
+          class="prediction animate__animated animate__lightSpeedInRight animate_delay-5s animate__repeat-1"
+          >{{ prediction }}</span
+        >
+      </p>
+    </div>
+    <a href="/"
+      >Back to home
+      <img src="../static/lightning-strikes.gif" alt="" class="buttonImg"
+    /></a>
+
+    <script>
+      let predictionElement = document.querySelector(".prediction");
+
+      let prediction = predictionElement.textContent.trim();
+      if (prediction === "Positive") {
+        let positiveImg = document.createElement("img");
+        positiveImg.src = "../static/confetti.gif"; // Corrected from negativeImg.src
+        positiveImg.alt = "Positive";
+        // positiveImg.style.height = "48px";
+        // positiveImg.style.width = "48px";
+        positiveImg.style.display = "inline-block";
+        positiveImg.style.verticalAlign = "middle";
+        positiveImg.style.border = "1px solid black";
+        predictionElement.appendChild(positiveImg);
+        predictionElement.classList.add("positiveImg");
+      } else {
+        let negativeImg = document.createElement("img");
+        negativeImg.src = "../static/sad.gif";
+        negativeImg.alt = "Negative";
+        // negativeImg.style.height = "48px";
+        // negativeImg.style.width = "48px";
+        negativeImg.style.display = "inline-block";
+        negativeImg.style.verticalAlign = "middle";
+        negativeImg.style.border = "1px solid black";
+        predictionElement.appendChild(negativeImg);
+        predictionElement.classList.add("negativeImg");
+      }
+    </script>
+  </body>
+</html>
