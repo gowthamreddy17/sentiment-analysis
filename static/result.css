@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+  /* border: 3px solid white; */
+}
+:root {
+  --animate-duration: 6800ms;
+  /* --animate-delay: 3.9s; */
+}
+h1 {
+  font-size: 2.3rem;
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 7px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+p {
+  font-size: 1.3rem;
+  color: azure;
+  margin-left: 2.8rem;
+  margin-right: 2.8rem;
+}
+p span {
+  background-color: rgba(255, 255, 0, 0.942);
+  color: black;
+  padding: 25px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+a {
+  /* width: 115px;
+    height: 25px; */
+  background: #4e9caf;
+  padding: 16px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  background: #9ad6e5;
+  color: black;
+}
+@media (max-width: 992px) {
+  body {
+    height: 55vh;
+    width: 100%;
+  }
+  .h1 {
+    font-size: 3.8rem;
+    align-content: center;
+  }
+
+  h1 {
+    font-size: 4.6rem; /* Double the font size */
+    margin-top: 15rem;
+    padding: 2rem;
+    width: 45%;
+  }
+
+  p {
+    font-size: 2.6rem; /* Double the font size */
+  }
+
+  p span {
+    padding: 30px; /* Double the padding */
+  }
+
+  a {
+    padding: 27px; /* Double the padding */
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 30%;
+    width: 35%;
+  }
+
+  #content1 {
+    margin-top: 8rem; /* Double the margin */
+    margin-bottom: 2rem; /* Double the margin */
+    width: 90%;
+    height: 18rem;
+    /* overflow: auto; */
+    align-content: center;
+    word-wrap: break-word;
+  }
+  .awardimg {
+    height: 98px;
+    width: 93px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid black;
+  }
+  .buttonImg {
+    height: 5rem;
+    width: 5rem;
+  }
+  .positiveImg img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .negativeImg img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+.content {
+  border: solid 2px rgb(255, 0, 119);
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding: 1.8rem;
+}
+h1 img {
+  height: 48px;
+  width: 43px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+a img {
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+span img {
+  height: 5rem;
+  width: 5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+span img {
+  height: 3.5rem;
+  width: 3.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
